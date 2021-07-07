@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="css/quick.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="js/main.js"></script>
+    
+    <title>Document</title>
+  
+    <style>
+    *{
+         box-sizing: border-box;
+     }
+    .y_wrap{
+        width: 1500px;
+        height: 3000px;
+        
+        margin: 0 auto;
+        }
+    .bigCtg_area {
+        width: 150px;
+        height: 500px;
+       
+       
+        float: left;
+        text-align: left;
+        
+    }
+    .y_main {
+        width: 1154px;
+        height: 2500px;
+        padding: 10px;
+        margin: 5px;
+        /*border: 2px solid red;*/
+        float: left;
+    }
+    .y_new{
+        width: 100px;
+        height: 300px;
+        padding: 10px;
+        margin: 5px;
+        border: 1px solid black;
+        float: left;
+        z-index: 9999;
+    }
+
+    .bigTitle{
+        font-size: 20px;
+        font-weight: 600;
+        padding-left: 0; 
+     
+    }
+    .cate1{
+        list-style: none;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: normal;
+    }
+    .cate1 > a{
+        list-style: none;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: normal;
+    }
+    .detail_wrap {
+        /*border: 1px solid blue;*/
+        width: 1100px;
+        height: 400px;
+        margin: auto;
+        float: left;
+        
+    }
+  
+    .img_section{
+        width: 300px;
+        height: 400px;
+        padding: 5px;
+        float: left;
+        
+    }
+    
+    .detail_bookInfo{
+        width: 600px;
+        height: 400px;
+        padding: 15px;
+       /* background-color: burlywood;*/
+        float: left;
+    }
+    .detail_bookPay{
+        width: 198px;
+        height: 400px;
+        padding: 10px;
+    
+        float: left;
+       /* border: 2px solid brown;*/
+    }
+    .detail_bookImg{
+        margin: 20px;
+        
+    }
+    .wifi{
+        margin-top: 15px;
+        margin-left: 90px;
+        display: block;
+    }
+    .bookInfo_section{
+        margin: 10px 0px; 
+        /*background-color: brown;*/
+        
+    }
+    .bookInfo_section > span{
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+    .detail_review > a{
+        list-style: none;
+        text-decoration: none;
+    }
+    .info_Price > span {
+        margin-bottom: 15px;
+        display: inline-block;
+    }
+
+    .detail_bookPay{
+        margin-top: 100px;
+    }
+    .detail_bookPay > div {
+        margin: 20px;
+    }
+    
+    .detail_section1{
+        margin-top: 15px;
+        float: left;
+        border: 2px solid black;
+        width: 1100px;
+        height: 300px;
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 15px;
+        
+      
+    }
+    .detail_section2{
+        margin-top: 15px;
+        float: left;
+        border: 2px solid black;
+        width: 1100px;
+        height: 300px;
+        text-align: center;
+        line-height: 300px;
+        font-size: 30px;
+    }
+    .table{
+        float: left;
+        width: 600px;
+        height: 250px;
+    }
+    .quick{
+        display: none;
+        
+    }
+    </style>
+</head>
+<body>
+    <div id="header"></div>
+    <div class="y_wrap">
+        <div class="bigCtg_area" id="side"></div>
+        <div class="y_main">
+            <div class="detail_wrap">
+                <div class="img_section">
+                    <div class="detail_bookImg">
+                        <img src="img/book.jpg" style="width: 250px; height: 310px;">
+                        <span class="wifi">
+                            <input type="button" value="공유하기">
+                        </span>
+                    </div>
+                </div>
+                <div class="detail_bookInfo">
+                    <div class="bookInfo_section">
+                        <span class="detail_bookTilte" style="font-weight: 600; font-size: 25px;">마지막 몰입 : 나를 넘어서는 힘</span> <br>
+                        <span class="detail_bookAuthor">짐 퀵 저/김미정 역 </span> &nbsp;|
+                        <span class="detail_bookPub">비즈니스북스</span> &nbsp;|
+                        <span class="detail_bookDate">2021년 02월 23일</span><br>
+                        <span class="detail_grade">★★★★★9.6</span> &nbsp;
+                        <span class="detail_review"><a href="#">회원리뷰(86건)</a></span> &nbsp;|
+                        <span class="detail_sales">판매지수 174,628</span>
+                        <hr>
+                    </div>
+                    <div class="bookInfo_bottom">
+                        <div class="info_Price">
+                                <span class="bornPrice" style="font-size: 18px;">정가</span> &nbsp;&nbsp;
+                                <span class="bornPrice1">16,800원</span> <br>
+                                
+                                <span class="sellPrice" style="font-size: 18px; font-weight: 600;">판매가</span> &nbsp;&nbsp;
+                                <span class="sellPrice1" style="color: rgb(231, 60, 60); font-size: 20px; font-weight: 600;">15,120원(10%할인)</span> <br>
+                                
+                                <span class="deliverInfo" style="font-size: 18px;"> 배송안내 -> 경기도 고양시 일산동구 장항동동로동동 123-999</span><br>
+                                <span style="font-size: 18px;"> *배송비 : 무료</span>
+    
+                        </div>
+                    </div>       
+                </div>
+                <div class="detail_bookPay">
+                    <div class="detail_payWrap3">
+                        <span class="ing"><input type="text" value="판매중" size="4px"></span>
+                        <input type="textarea" value="수량선택(미완성)" size="11px">
+                    </div>
+                    <div class="detail_payWrap1">
+                        <span class="cart"><input type="button" value="카트에 넣기" style=" background-color: rgb(77, 77, 235); color: white; "></span>
+                    </div>
+                    <div class="detail_payWrap2">
+                        <span class="buy"><input type="button" value="바로구매" style=" background-color: blue; color: white;"></span>
+                    </div>
+                </div>   
+            </div>
+            <div class="detail_section1">
+                <div class="infotable">품목정보
+                    <table class="table" border="1px">
+                        <tr>
+                            <td>출간일</td>
+                            <td>2021년02월23일</td>
+                        </tr>
+                        <tr>
+                            <td>쪽수, 무게, 크기</td>
+                            <td>392쪽 | 598g | 125*225*30</td>
+                        </tr>
+                        <tr>
+                            <td>ISBN13</td>
+                            <td>9791162541968</td>
+                        </tr>
+                        <tr>
+                            <td>ISBN10</td>
+                            <td>1162541962</td>
+                        </tr>
+                    </table>
+                </div>
+           
+            </div>
+            <div class="detail_section2">
+                책소개
+            </div>
+            <div class="detail_section2">
+                목차
+            </div>
+            <div class="detail_section2">
+                저자소개
+            </div>
+            <div class="detail_section2">
+                회원리뷰
+            </div>
+            <div class="detail_section2"></div>
+        </div> 
+        <aside class="mypage_ad">
+            <div class="mypage_ad_name"><p>최근본상품</p></div>
+            <div class="img_area">
+                <img src="img/book.jpg" width="70px" height="100px">
+            </div>
+            <div style="text-align: center;">
+                <p>책이름</p>
+            </div>
+        </aside>   
+        <div id="footer"></div>
+    </div>
+</body>

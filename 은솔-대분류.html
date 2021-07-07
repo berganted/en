@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="css/quick.css">
+    <script src="js/main.js"></script>
+    <style>
+    *{
+         box-sizing: border-box;
+     }
+    .y_wrap{
+        width: 1500px;
+        height: 3000px;
+        
+        margin: 0 auto;
+        }
+    .bigCtg_area {
+        width: 150px;
+        height: 500px;
+       
+       
+        float: left;
+        text-align: left;
+        
+    }
+    .y_main {
+        width: 1154px;
+        height: 2500px;
+        padding: 10px;
+        margin: 5px;
+        
+        float: left;
+    }
+    .y_new{
+        width: 100px;
+        height: 300px;
+        padding: 10px;
+        margin: 5px;
+        border: 1px solid black;
+        float: left;
+    }
+   
+    .bigTitle{
+        font-size: 20px;
+ 
+        font-weight: 600;
+        padding-left: 0; 
+     
+    }
+    .cate1 {
+        
+        font-size: 15px;
+        list-style: none;
+        
+       
+    }
+    .cate1 > a{
+        
+        font-size: 15px;
+        text-decoration: none;
+        list-style: none;
+       
+        font-weight: normal;
+    }
+    .smallCtgName{
+        font-size: 25px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+    .smallCtg_area{
+        margin: 0 auto;
+        border: 1px solid black;
+        width: 1100px;
+        height: 120px;
+        margin-bottom: 20px;
+    }
+
+    .BigIndex_choice {
+        font-size: 25px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+    .BigIndex_choice_content {
+        margin: 0 auto;
+        border: 1px solid black;
+        width: 1100px;
+        height: 400px;
+        margin-bottom: 20px;
+        
+
+    }
+  
+
+    .BigIndex_newStar {
+        font-size: 25px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+    .BigIndex_newStar_content {
+        margin: 0 auto;
+       
+        width: 1100px;
+        height: 1000px;
+        margin-bottom: 20px;
+
+    }
+    .choiceImg {
+        border: 1px solid black;
+        width: 250px;
+        height: 320px;
+        float: left;
+        margin: 40px 50px;
+        text-align: center;
+        line-height: 300px;
+    }
+
+    
+    .chocieInfo {
+        border: 1px solid black;
+        width: 700px;
+        margin-top: 20px;
+        float: left;
+        
+    }
+    .choiceName {
+        margin-top: -3px;
+        font-size : 20px;
+        font-weight: 600;
+    }
+    .bps_price {
+        font-weight: 600; 
+    }
+    .choice_intro {
+        border: 1px solid black;
+        width: 700px;
+        height: 200px;
+        margin-top: 10px;
+    }
+
+
+    .BigIndex_newStar_content > div{
+        
+        width: 300px;
+        height: 400px;
+        float: left;
+        margin: 20px;
+        text-align: center;
+        
+
+    }
+    .BigIndex_newStar_content > div > img{
+        width:80%;
+        height: 70%;
+    }
+     
+    .newStar_info {
+        font-size: 15px;
+        display: inline-block;
+    }
+
+    .BigIndex_newEye {
+        font-size: 25px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+
+    .BigIndex_newEye_wrap {
+        margin: 0 auto;
+
+        width: 1100px;
+        height: 650px;
+        margin-bottom: 20px;
+    
+
+    }
+
+    .BigIndex_newEye_content1{
+        
+        float: left;
+        width: 520px;
+        height: 320px;
+       
+    }
+    .BigIndex_newEye_content2{
+        
+        float: left;
+        width: 520px;
+        height: 320px;
+     
+    }
+    .BigIndex_newEye_content3{
+        
+        float: left;
+        width: 520px;
+        height: 320px;
+      
+    }
+    .BigIndex_newEye_content4{
+        
+        float: left;
+        width: 520px;
+        height: 320px;
+   
+    }
+
+
+    .newEye_imgSection{
+        float: left;
+        width: 200px;
+        height: 300px;
+   
+    }
+    .newEye_infoSection{
+     
+        float: left;
+        width: 300px;
+        height: 300px;  
+        padding-top: 10px;
+
+        margin-left: 10px;
+    }
+    .newEye_img {
+        overflow: hidden;
+    }
+ 
+    </style>
+ 
+</head>
+
+<body>
+    <div class="y_wrap">
+        <div id=header></div>
+        <div class="bigCtg_area" id="side">
+            
+        </div>  
+        <div class="y_main">
+            <div class="smallCtgName">가정살림</div>
+            <div class="smallCtg_area"> 
+                <div class="smallTitle"> 
+                    <span class="cate2">임신/출산</span> 
+                    <span class="cate2">육아</span>
+                    <span class="cate2">자녀교육</span>
+                    <span class="cate2">요리</span>
+                    <span class="cate2">집/살림</span>
+                    <span class="cate2">결혼/가족</span>
+                </div>
+            </div>
+            
+            <div class="BigIndex_choice"> BSP의 선택 </div>
+            <div class="BigIndex_choice_content">(스와이퍼 사용)
+                <div class="choiceImg"><img src = "img/book.jpg" style="height: 100%; width: 100%;"></div>
+                <div class="chocieInfo">
+                    <p class="choiceName">마지막 몰입 : 나를 넘어서는 힘</p>
+                    <p class="choice_pub">
+                        <span class="choice_author">짐 퀵 저/김미정 역</span>
+                        <em class="divi">|</em>
+                        <span class="chocie_pub">비즈니스북스</span>
+                    </p>
+                    <p class="choice_price">
+                        <span class="bps_price">15,120</span>원
+                        <span class="bps_sale">(10%할인)</span>
+                        <span class="bps_point">★123원</span>
+                    </p>
+                    <div class="choice_intro">책 한 권 읽지 못했던 그는 어떻게 세계 최고의 두뇌력을 갖게 됐을까?
+                        UN, 하버드, 구글… 세계 1%가 극찬한 두뇌 전문가 짐 퀵이 전하는 잠재력의 놀랍고 위대한 힘!
+                        
+                        6년 전 스페이스X의 일론 머스크가 더 똑똑해지고 싶다는 열망에 한 두뇌 전문가를 찾아 큰 화제가 됐다. 
+                        그 전문가는 바로 ‘짐 퀵’이었다. 그는 25년 넘게 세계 정상급의 CEO와 운동선수, 배우 등 각계각층의 성공한 사람들뿐 아니라
+                         UN, 미국 백악관, 하버드대학교, 구글, 나이키, 자포스 등 세계적 기업과 기관, 단체에서 찾는 독보적이고 저명한 브레인 코치다. 
+                         세계적인 경제지 《포브스》에서는 “짐 퀵은 지식을 배우거나 일을 하거나 취미로 운동을 하더라도 원하는 수준 이상의 성과를 이루는 법을 알려준다”고 평했다.
+         
+                         
+                    </div>
+                    
+                </div>
+            </div>
+
+
+            <div class="BigIndex_newEye"> 눈에 띄는 새책</div>
+            <div class="BigIndex_newEye_wrap">
+                <div class="BigIndex_newEye_content1">
+                    <div class="newEye_imgSection">
+                        <div class="newEye_img"><img src="img/fruit.jpg" style="width: 200px; height: 300px;"></div>
+                    </div> 
+                    <div class="newEye_infoSection">  
+                        <div class="newEye_title">해피해피과일위크</div>
+                        <div class="newEye_author">김민정 저</div>
+                        <div class="newEye_pub">비앤씨월드</div>
+                        <div class="newEye_intro">
+                            인기 파티시에 김민정의 대박프로젝트 ‘과일위크’가 『해피해피 과일위크』라는 책으로 탄생했다.
+                            싱싱한 제철 과일을 디저트에 응용한 레시피북으로 복잡하지 않은 제품 구성, 누구나 좋아하는 자연스런 맛, 
+                            상품성이 돋보이는 디자인 등 그녀만의 스타일이 제대로 녹아있다 
+                        </div>
+                    </div> 
+                </div> 
+                <div class="BigIndex_newEye_content2">
+                    <div class="newEye_imgSection">
+                        <div class="newEye_img"><img src="img/fruit.jpg" style="width: 200px; height: 300px;"></div>
+                    </div> 
+                    <div class="newEye_infoSection">  
+                        <div class="newEye_title">해피해피과일위크</div>
+                        <div class="newEye_author">김민정 저</div>
+                        <div class="newEye_pub">비앤씨월드</div>
+                        <div class="newEye_intro">
+                            인기 파티시에 김민정의 대박프로젝트 ‘과일위크’가 『해피해피 과일위크』라는 책으로 탄생했다.
+                            싱싱한 제철 과일을 디저트에 응용한 레시피북으로 복잡하지 않은 제품 구성, 누구나 좋아하는 자연스런 맛, 
+                            상품성이 돋보이는 디자인 등 그녀만의 스타일이 제대로 녹아있다 
+                        </div>
+                    </div> 
+                </div> 
+                <div class="BigIndex_newEye_content3">
+                    <div class="newEye_imgSection">
+                        <div class="newEye_img"><img src="img/fruit.jpg" style="width: 200px; height: 300px;"></div>
+                    </div> 
+                    <div class="newEye_infoSection">  
+                        <div class="newEye_title">해피해피과일위크</div>
+                        <div class="newEye_author">김민정 저</div>
+                        <div class="newEye_pub">비앤씨월드</div>
+                        <div class="newEye_intro">
+                            인기 파티시에 김민정의 대박프로젝트 ‘과일위크’가 『해피해피 과일위크』라는 책으로 탄생했다.
+                            싱싱한 제철 과일을 디저트에 응용한 레시피북으로 복잡하지 않은 제품 구성, 누구나 좋아하는 자연스런 맛, 
+                            상품성이 돋보이는 디자인 등 그녀만의 스타일이 제대로 녹아있다 
+                        </div>
+                    </div> 
+                </div> 
+                <div class="BigIndex_newEye_content4">
+                    <div class="newEye_imgSection">
+                        <div class="newEye_img"><img src="img/fruit.jpg" style="width: 200px; height: 300px;"></div>
+                    </div> 
+                    <div class="newEye_infoSection">  
+                        <div class="newEye_title">해피해피과일위크</div>
+                        <div class="newEye_author">김민정 저</div>
+                        <div class="newEye_pub">비앤씨월드</div>
+                        <div class="newEye_intro">
+                            인기 파티시에 김민정의 대박프로젝트 ‘과일위크’가 『해피해피 과일위크』라는 책으로 탄생했다.
+                            싱싱한 제철 과일을 디저트에 응용한 레시피북으로 복잡하지 않은 제품 구성, 누구나 좋아하는 자연스런 맛, 
+                            상품성이 돋보이는 디자인 등 그녀만의 스타일이 제대로 녹아있다 
+                        </div>
+                    </div> 
+                </div> 
+            </div>    
+          
+                
+                
+                
+                
+         
+        
+
+            <div class="BigIndex_newStar"> 주목신간</div>
+            <div class="BigIndex_newStar_content">
+                <div class="BigIndex_newStar_a">
+                    <img src="img/book.jpg">
+                    <div class="newStar_info">
+                        <sapn class="newStar_title">마지막 몰입 : 나를 넘어서는 힘</sapn>
+                        <span class="newStar_author">짐 퀵 저/김미정 역</span>
+                        <span class="newStar_pub">비즈니스북스</span>
+                        <span class="newStar_Price">15,120원(10%할인)</span>
+                    </div>            
+                 </div>
+                <div class="BigIndex_newStar_b">
+                    <img src="img/book.jpg">
+                    <div class="newStar_info">
+                        <sapn class="newStar_title">마지막 몰입 : 나를 넘어서는 힘</sapn>
+                        <span class="newStar_author">짐 퀵 저/김미정 역</span>
+                        <span class="newStar_pub">비즈니스북스</span>
+                        <span class="newStar_Price">15,120원(10%할인)</span>
+                    </div>            
+                 </div>
+                <div class="BigIndex_newStar_c">
+                    <img src="img/book.jpg">
+                    <div class="newStar_info">
+                        <sapn class="newStar_title">마지막 몰입 : 나를 넘어서는 힘</sapn>
+                        <span class="newStar_author">짐 퀵 저/김미정 역</span>
+                        <span class="newStar_pub">비즈니스북스</span>
+                        <span class="newStar_Price">15,120원(10%할인)</span>
+                    </div>            
+                 </div>
+                <div class="BigIndex_newStar_d">
+                    <img src="img/book.jpg">
+                    <div class="newStar_info">
+                        <sapn class="newStar_title">마지막 몰입 : 나를 넘어서는 힘</sapn>
+                        <span class="newStar_author">짐 퀵 저/김미정 역</span>
+                        <span class="newStar_pub">비즈니스북스</span>
+                        <span class="newStar_Price">15,120원(10%할인)</span>
+                    </div>            
+                 </div>
+                <div class="BigIndex_newStar_e">
+                    <img src="img/book.jpg">
+                    <div class="newStar_info">
+                        <sapn class="newStar_title">마지막 몰입 : 나를 넘어서는 힘</sapn>
+                        <span class="newStar_author">짐 퀵 저/김미정 역</span>
+                        <span class="newStar_pub">비즈니스북스</span>
+                        <span class="newStar_Price">15,120원(10%할인)</span>
+                    </div>            
+                 </div>
+                <div class="BigIndex_newStar_f">
+                    <img src="img/book.jpg">
+                    <div class="newStar_info">
+                        <sapn class="newStar_title">마지막 몰입 : 나를 넘어서는 힘</sapn>
+                        <span class="newStar_author">짐 퀵 저/김미정 역</span>
+                        <span class="newStar_pub">비즈니스북스</span>
+                        <span class="newStar_Price">15,120원(10%할인)</span>
+                    </div>            
+                 </div>
+            </div>
+            
+
+        </div>
+        <aside class="mypage_ad">
+            <div class="mypage_ad_name"><p>최근본상품</p></div>
+            <div class="img_area">
+                <img src="img/book.jpg" width="70px" height="100px">
+            </div>
+            <div style="text-align: center;">
+                <p>책이름</p>
+            </div>
+        </aside>   
+           
+        <div id=footer></div>
+    </div>
+    
+
+</body>
+</html>
